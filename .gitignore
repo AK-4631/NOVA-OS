@@ -1,0 +1,55 @@
+# Build outputs (never commit generated images or toolchains)
+output/
+buildroot/*/output/
+build/
+build-*/
+dist/
+tmp/
+
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example
+
+# Compiled objects and archives
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+
+# Qt / IDE artifacts
+*.user
+*.user.*
+.moc/
+.obj/
+.rcc/
+.qmake/
+CMakeUserPresets.json
+
+# Kernel / bootloader build intermediates
+*.dtb
+*.dtbo
+*.cmd
+.tmp/
+
+# Buildroot downloads cache (kept outside the repo per reproducibility policy)
+dl/
+ccache/
+
+# Session screenshots and logs are evidence, but large raw captures stay out
+*.prof
+*.perf
+*.log.gz
+
+# Editor / OS noise
+.vs/
+.vscode/
+.idea/
+.fleet/
+.DS_Store
+Thumbs.db
